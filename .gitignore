@@ -1,0 +1,34 @@
+.DS_Store
+data/
+node_modules/
+#  .gitignore忽略文件的版本跟踪
+#  #注释 \转义  反斜线‘\’
+#  正则化 模式匹配，注释一批文件
+#  *可以匹配任何字符（0或者多次），？匹配任何字符1次，但都不能匹配/
+#  /用于分割目录层次
+#  ！重新包含被排除的文件；如果该文件的父级目录被排除，则没办法包含
+#  []匹配字符集合，例如[abc]匹配a或b或c,a[mn]z匹配amz或anz
+#  [0-9]匹配0-9中的任意一个数字
+#  [a-z]匹配a-z中的任意一个小写字母
+#  [A-Z]匹配A-Z中的任意一个大写字母
+#  [^a]匹配除了a以外的任意字符
+#  [^a-z]匹配除了a-z中的任意一个字符
+#  **匹配任意层级的目录,a/**/z匹配a/z,a/b/z,a/b/c/z等
+
+
+#1. Ignore所有内容
+# *
+
+#2. Ignore所有目录
+# */
+
+#3. Ignore,data中的所有文件，除了mermaid_chart.xlsx文件,先排除data下的所有文件，再重新包含mermaid_chart.xlsx文件。不能直接排除父级目录
+# data/*
+# !data/mermaid_chart.xlsx
+
+#4. 只保留data目录的下.xlsx后缀的文件
+# /*
+# !/data/
+# data/*
+# !data/*.xlsx
+
