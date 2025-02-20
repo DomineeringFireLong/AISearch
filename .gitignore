@@ -1,6 +1,5 @@
-.DS_Store
-data/
-node_modules/
+# .DS_Store
+# data/
 #  .gitignore忽略文件的版本跟踪
 #  #注释 \转义  反斜线‘\’
 #  正则化 模式匹配，注释一批文件
