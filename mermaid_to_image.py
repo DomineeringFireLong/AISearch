@@ -4,6 +4,8 @@ import pandas as pd
 import time
 import re
 
+#mermaid转化成图片
+
 def extract_mermaid_code(text):
     """
     从文本中提取 Mermaid 代码块。
